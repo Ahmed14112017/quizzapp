@@ -9,8 +9,10 @@ import Logout from "./Modules/Authontication/Logout/Logout"
 import { ToastContainer } from "react-toastify"
 import 'react-toastify/dist/ReactToastify.css';
 import MasterLayout from "./Shared/Component/MasterLayout/MasterLayout"
-import Dashboard from "./Shared/Component/Dashboard/Dashboard"
+import Dashboard from "./Modules/Dashboard/Dashboard"
 import ResetPassword from "./Modules/Authontication/ResetPassword/ResetPassword"
+import Group from "./Modules/Group/Group"
+// import GroupData from "./Modules/Group/GroupData"
 
 
 
@@ -31,9 +33,11 @@ function App() {
 
     },
     {
-      path:"dashboard",element:<MasterLayout/>,errorElement:<Notfound/>,
+      path:"/dashboard",element:<MasterLayout/>,errorElement:<Notfound/>,
       children:[
-        {index:true, element:<Dashboard/>}
+        {index:true, element:<Dashboard/>}, 
+        {path:"group", element:<Group/>}, 
+        // {path:"group-data", element:<GroupData/>}, 
       ]
     }
   ])

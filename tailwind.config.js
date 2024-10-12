@@ -21,6 +21,7 @@ export default {
         backgroudcolor:"#FFEDDF",
         auttextcolor:"#C5D86D",
         authchoosuserbackgroundcolor:"#333333",
+        bgbuttoncolor:"#FFEDDF"
 
 
       }

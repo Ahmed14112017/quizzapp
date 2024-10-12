@@ -35,3 +35,27 @@ export interface Resetpassword {
     email:string,
     password:string,
 }
+
+export interface GroupsList{
+    _id:string|null,
+    name:string|null,
+    status:string|null,
+    max_students:number|null
+}
+export interface Addgroup{
+    name:string,
+    students:number[]
+}
+export interface StudentData{
+    _id:number,
+    email:string,
+    last_name:string,
+    role:string,
+    status:string
+}
+
+export interface ItemGroup {
+    name:string,
+    students:string[]
+    message:string
+}

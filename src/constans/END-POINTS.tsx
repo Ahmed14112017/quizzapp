@@ -12,5 +12,20 @@ export const AUTH_URL={
 
 }
 
+const GROUP_URL=`${BASE_URL}/group`;
+export const GROUP_URLS={
+    getGroups:`${GROUP_URL}`,
+    getGroupById:`${GROUP_URL}/:id`,
+    createGroup:`${GROUP_URL}`,
+    updateGroup:(id:any)=>`${GROUP_URL}/${id}`,
+    deleteGroup:(id: any)=>`${GROUP_URL}/${id}`,
+}
+
+const STUDENTS_URL=`${BASE_URL}/student`
+export const STUDENTS_URLS={
+    getStudents:`${STUDENTS_URL}`,
+    getStudentById:`${STUDENTS_URL}/:id`,
+    
+}
 
 
